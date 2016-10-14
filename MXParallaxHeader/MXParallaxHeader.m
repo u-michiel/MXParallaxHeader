@@ -107,7 +107,7 @@ static void * const kMXParallaxHeaderKVOContext = (void*)&kMXParallaxHeaderKVOCo
         
         //Adjust content inset
         [self adjustScrollViewTopInset:scrollView.contentInset.top + self.height];
-        [scrollView addSubview:self.contentView];
+        [scrollView insertSubview:self.contentView atIndex:0];
         
         //Layout content view
         [self layoutContentView];
